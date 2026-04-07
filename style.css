@@ -1,280 +1,50 @@
-/* ====== GENERAL ====== */
-body{
+/* ====== BASE ====== */
+body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background: #f1f5f9;
+  background: #fc97ce;
   color: #1e293b;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* ====== HEADER ====== */
-header{
-  background: #ffffff;
+header {
+  background: #ffddf6;
   color: #111827;
   padding: 25px 15px;
   text-align: center;
   border-bottom: 1px solid #e2e8f0;
 }
 
-/* ====== NAV ====== */
-nav{
+/* ====== NAVIGATION ====== */
+nav,
+.section-nav {
   background: #ffffff;
   padding: 12px;
   text-align: center;
   border-bottom: 1px solid #e2e8f0;
 }
 
-nav a{
+nav a,
+.section-nav a {
   text-decoration: none;
   color: #1e293b;
   margin: 0 12px;
   font-weight: 500;
-}
-
-nav a:hover{
-  opacity: 0.6;
-}
-
-/* ====== MAIN GRID ====== */
-main.grid-layout{
-  max-width: 1000px;
-  margin: 30px auto;
-  padding: 0 15px;
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  gap: 20px;
-}
-
-/* ====== CARDS ====== */
-#about,
-#skills,
-.march-block,
-.blog-box{
-  background: #ffffff;
-  padding: 18px;
-  border-radius: 10px;
-  border: 1px solid #e2e8f0;
-}
-
-/* ====== RIGHT COLUMN ====== */
-.right-col{
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-/* ====== TITLES ====== */
-section h2,
-.blog-box h3{
-  color: #111827;
-  margin-top: 0;
-}
-
-/* ====== BUSINESS CARD ====== */
-.business-card{
-  display: flex;
-  gap: 15px;
-  align-items: center;
-  margin-top: 15px;
-  padding: 15px;
-  border-radius: 10px;
-  background: #f8fafc;
-  border: 1px solid #e2e8f0;
-}
-
-.avatar{
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  overflow: hidden;
-}
-
-.avatar img{
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-/* ====== CALENDAR ====== */
-.layout-table{
-  width: 100%;
-  border-collapse: collapse;
-}
-
-.cell{
-  border: 1px solid #e2e8f0;
-  padding: 15px;
-  vertical-align: top;
-}
-
-.calendar a{
-  text-decoration: none;
-  padding: 6px;
-  display: inline-block;
-  color: #1e293b;
-}
-
-.special{
-  background: #e2e8f0;
-  font-weight: bold;
-}
-
-.special:hover{
-  background: #cbd5e1;
-}
-
-.info{
-  display: none;
-  border: 1px solid #e2e8f0;
-  padding: 10px;
-  margin-top: 10px;
-  border-radius: 8px;
-  background: #f8fafc;
-}
-
-.info:target{
-  display: block;
-}
-
-/* ====== BLOG GRID ====== */
-.blog-grid{
-  max-width: 1000px;
-  margin: 30px auto;
-  padding: 0 15px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
-}
-
-/* ====== TABLE STYLE ====== */
-.div-table{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 10px;
-  margin-top: 12px;
-}
-
-.div-cell{
-  border: 1px solid #e2e8f0;
-  padding: 10px;
-  text-align: center;
-  border-radius: 6px;
-  background: #f8fafc;
-}
-
-.div-head{
-  font-weight: bold;
-  background: #f1f5f9;
-}
-
-/* ====== SCHOOL PHOTO ====== */
-.school-photo{
-  margin-top: 15px;
-}
-
-.school-photo img{
-  width: 100%;
-  height: 260px;
-  object-fit: cover;
-  border-radius: 12px;
-  display: block;
-}
-
-/* ====== FAMILY PHOTO ====== */
-.family-photo{
-  margin-top: 15px;
-  display: flex;
-  justify-content: center;
-}
-
-.family-photo img{
-  width: 100%;
-  max-width: 350px;
-  height: auto;
-  border-radius: 10px;
-}
-
-/* ====== SECTION NAV ====== */
-.section-nav{
-  background: #ffffff;
-  padding: 10px;
-  text-align: center;
-  border-bottom: 1px solid #e2e8f0;
-}
-
-.section-nav a{
-  color: #1e293b;
-  text-decoration: none;
-  margin: 0 15px;
-  font-weight: 500;
-}
-
-.section-nav a:hover{
-  opacity: 0.6;
-}
-
-/* ====== FOOTER ====== */
-footer{
-  background: #ffffff;
-  color: #1e293b;
-  text-align: center;
-  padding: 15px;
-  border-top: 1px solid #e2e8f0;
-}
-
-footer a{
-  color: #1e293b;
-  text-decoration: none;
-  font-weight: 500;
-}
-
-footer a:hover{
-  text-decoration: underline;
-}
-
-/* ====== RESPONSIVE ====== */
-@media (max-width: 768px){
-  main.grid-layout{
-    grid-template-columns: 1fr;
-  }
-
-  .blog-grid{
-    grid-template-columns: 1fr;
-  }
-
-  .family-photo{
-    grid-template-columns: 1fr;
-  }
-
-  .family-photo img,
-  .school-photo img{
-    height: auto;
-  }
-}
-
-/* ====== SMOOTH SCROLL ====== */
-html{
-  scroll-behavior: smooth;
-}
-.blog-grid{
-  grid-template-columns: 1fr 1fr 1fr;
-}
-.blog-box{
+  position: relative;
   transition: 0.3s;
 }
 
-.blog-box:hover{
-  transform: translateY(-4px);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
-}
-.section-nav a{
-  color: #1e293b;
-  text-decoration: none;
-  margin: 0 15px;
-  font-weight: 500;
-  position: relative;
+nav a:hover,
+.section-nav a:hover {
+  opacity: 0.6;
 }
 
-.section-nav a::after{
+/* underline animation */
+.section-nav a::after {
   content: "";
   position: absolute;
   left: 0;
@@ -285,25 +55,215 @@ html{
   transition: 0.3s;
 }
 
-.section-nav a:hover::after{
+.section-nav a:hover::after {
   width: 100%;
 }
-.about-box{
-  display: flex;
+
+/* ====== LAYOUT ====== */
+main.grid-layout {
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 0 15px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
   gap: 20px;
-  align-items: flex-start;
 }
 
-.about-box{
+.right-col {
   display: flex;
-  flex-direction: column; /* МІНЕ ОСЫ */
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* ====== CARDS ====== */
+#about,
+#skills,
+.march-block,
+.blog-box {
+  background: #ffffff;
+  padding: 18px;
+  border-radius: 10px;
+  border: 1px solid #e2e8f0;
+}
+
+/* ====== TITLES ====== */
+section h2,
+.blog-box h3 {
+  margin-top: 0;
+  color: #111827;
+}
+
+/* ====== BLOG ====== */
+.blog-grid {
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 0 15px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.blog-box {
+  transition: 0.3s;
+}
+
+.blog-box:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* ====== BUSINESS CARD ====== */
+.business-card {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  margin-top: 15px;
+  padding: 15px;
+  border-radius: 10px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+}
+
+.avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ====== TABLE ====== */
+.layout-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.cell {
+  border: 1px solid #e2e8f0;
+  padding: 15px;
+  vertical-align: top;
+}
+
+/* ====== CALENDAR ====== */
+.calendar a {
+  text-decoration: none;
+  padding: 6px;
+  display: inline-block;
+  color: #1e293b;
+}
+
+.special {
+  background: #e2e8f0;
+  font-weight: bold;
+}
+
+.special:hover {
+  background: #cbd5e1;
+}
+
+.info {
+  display: none;
+  border: 1px solid #e2e8f0;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 8px;
+  background: #f8fafc;
+}
+
+.info:target {
+  display: block;
+}
+
+/* ====== DIV TABLE ====== */
+.div-table {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.div-cell {
+  border: 1px solid #e2e8f0;
+  padding: 10px;
+  text-align: center;
+  border-radius: 6px;
+  background: #f8fafc;
+}
+
+.div-head {
+  font-weight: bold;
+  background: #f1f5f9;
+}
+
+/* ====== IMAGES ====== */
+.school-photo img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.family-photo {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.family-photo img {
+  width: 100%;
+  max-width: 350px;
+  border-radius: 10px;
+}
+
+/* ====== ABOUT ====== */
+.about-box {
+  display: flex;
+  flex-direction: column;
   align-items: center;
   text-align: center;
 }
 
-.about-box img{
+.about-box img {
   width: 220px;
-  height: auto;
   border-radius: 12px;
   margin-bottom: 10px;
+}
+
+/* ====== FOOTER ====== */
+footer {
+  background: #ffffff;
+  text-align: center;
+  padding: 15px;
+  border-top: 1px solid #e2e8f0;
+}
+
+footer a {
+  text-decoration: none;
+  color: #1e293b;
+  font-weight: 500;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* ====== RESPONSIVE ====== */
+@media (max-width: 768px) {
+  main.grid-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .blog-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .school-photo img,
+  .family-photo img {
+    height: auto;
+  }
 }
