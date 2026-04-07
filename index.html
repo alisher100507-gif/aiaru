@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport">
+    <title>Жеке портфолио</title>
+    <link rel="stylesheet" href="vizitka.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body onload="welcome()">
+    <header>
+      <h1>Менің жеке портфолиом</h1>
+    </header>
+
+    <nav class="main-nav">
+        <a href="aiaru.html">Басты бет</a>
+        <a href="blog.html">Блог</a>
+        <a href="#about">Мен туралы</a>
+        <a href="#skills">Оқу</a>
+        <a href="#contact">Байланыс</a>
+    </nav>
+
+    <main class="grid-layout">
+
+        <section id="about">
+            <h2>Мен туралы</h2>
+
+            <div class="business-card">
+                <div class="avatar">
+                    <img src="me.jpeg" alt="Менің суретім">
+                </div>
+
+                <div class="card-right">
+                    <h3>Қайырбаева Айару</h3>
+                    <p class="role">Информатика педагогика</p>
+                    <p>Еуразия Ұлттық Университеті</p>
+                </div>
+            </div>
+
+            <div id="contact" class="contact-box">
+                <h3>Байланыс</h3>
+                <p>
+                    Email:
+                    <a href="mailto:aiarukaiyrbaiiii@gmail.com">
+                        aiarukaiyrbaiiii@gmail.com
+                    </a>
+                </p>
+                <p>
+                    Instagram:
+                    <a href="https://instagram.com/aiaryyqq" target="_blank">
+                        aiaryyqq
+                    </a>
+                </p>
+            </div>
+        </section>
+
+        <div class="right-col">
+            <section id="skills">
+                <h2>Оқу</h2>
+                <ul>
+                    <li>Мен Еуразия Ұлттық Университетінде 2 курс студентімін</li>
+                    <li>Информатика педагогика бағытында білім аламын</li>
+                </ul>
+            </section>
+
+            <section class="march-block">
+                <table class="layout-table">
+                    <tr>
+                        <td class="cell title-cell">
+                            <h2>Наурыз айындағы сабақ жоспары</h2>
+                            <p>Күнді басып ақпаратты қараңыз.</p>
+
+                            <div class="legend">
+                                <span class="dot weekend-dot"></span> Демалыс (Сб, Жс)
+                                <span class="dot special-dot"></span> Арнайы күн
+                            </div>
+                        </td>
+
+                        <td class="cell calendar-cell">
+                            <table class="calendar">
+                                <tr>
+                                    <th>Дс</th>
+                                    <th>Сс</th>
+                                    <th>Ср</th>
+                                    <th>Бс</th>
+                                    <th>Жм</th>
+                                    <th class="weekend-col">Сб</th>
+                                    <th class="weekend-col">Жс</th>
+                                </tr>
+                                <tr>
+                                    <td class="empty"></td>
+                                    <td class="empty"></td>
+                                    <td class="empty"></td>
+                                    <td class="empty"></td>
+                                    <td class="empty"></td>
+                                    <td class="empty weekend-col"></td>
+                                    <td class="day weekend-col"><a href="#day1">1</a></td>
+                                </tr>
+
+                                <tr>
+                                    <td class="day"><a href="#day2">2</a></td>
+                                    <td class="day"><a href="#day3">3</a></td>
+                                    <td class="day"><a href="#day4">4</a></td>
+                                    <td class="day"><a href="#day5">5</a></td>
+                                    <td class="day"><a href="#day6">6</a></td>
+                                    <td class="day weekend-col"><a href="#day7">7</a></td>
+                                    <td class="day weekend-col special"><a href="#day8">8</a></td>
+                                </tr>
+
+                                <tr>
+                                    <td class="day special"><a href="#day9">9</a></td>
+                                    <td class="day"><a href="#day10">10</a></td>
+                                    <td class="day"><a href="#day11">11</a></td>
+                                    <td class="day"><a href="#day12">12</a></td>
+                                    <td class="day"><a href="#day13">13</a></td>
+                                    <td class="day weekend-col"><a href="#day14">14</a></td>
+                                    <td class="day weekend-col"><a href="#day15">15</a></td>
+                                </tr>
+
+                                <tr>
+                                    <td class="day"><a href="#day16">16</a></td>
+                                    <td class="day"><a href="#day17">17</a></td>
+                                    <td class="day"><a href="#day18">18</a></td>
+                                    <td class="day"><a href="#day19">19</a></td>
+                                    <td class="day"><a href="#day20">20</a></td>
+                                    <td class="day weekend-col special"><a href="#day21">21</a></td>
+                                    <td class="day weekend-col special"><a href="#day22">22</a></td>
+                                </tr>
+
+                                <tr>
+                                    <td class="day special"><a href="#day23">23</a></td>
+                                    <td class="day"><a href="#day24">24</a></td>
+                                    <td class="day"><a href="#day25">25</a></td>
+                                    <td class="day"><a href="#day26">26</a></td>
+                                    <td class="day"><a href="#day27">27</a></td>
+                                    <td class="day weekend-col"><a href="#day28">28</a></td>
+                                    <td class="day weekend-col"><a href="#day29">29</a></td>
+                                </tr>
+
+                                <tr>
+                                    <td class="day"><a href="#day30">30</a></td>
+                                    <td class="day"><a href="#day31">31</a></td>
+                                    <td class="empty"></td>
+                                    <td class="empty"></td>
+                                    <td class="empty"></td>
+                                    <td class="empty weekend-col"></td>
+                                    <td class="empty weekend-col"></td>
+                                </tr>
+                            </table>
+                        </td>
+
+                        <td class="cell info-cell">
+                            <div class="hint">
+                                📌 Күнді таңдасаңыз, ақпарат осында шығады.
+                            </div>
+
+                            <div id="day8" class="info">
+                                <h3>8-наурыз</h3>
+                                <p>Халықаралық әйелдер күні.</p>
+                            </div>
+
+                            <div id="day9" class="info">
+                                <h3>9-наурыз</h3>
+                                <p>8-наурыз жексенбі болғандықтан, 9 күні демалыс.</p>
+                            </div>
+
+                            <div id="day21" class="info">
+                                <h3>21-наурыз</h3>
+                                <p>Наурыз мейрамы.</p>
+                            </div>
+
+                            <div id="day22" class="info">
+                                <h3>22-наурыз</h3>
+                                <p>Наурыз мейрамы.</p>
+                            </div>
+
+                            <div id="day23" class="info">
+                                <h3>23-наурыз</h3>
+                                <p>Наурыз мейрамы.</p>
+                            </div>
+
+                            <div id="day1" class="info"><h3>1-наурыз</h3><p>Жексенбі.</p></div>
+                            <div id="day2" class="info"><h3>2-наурыз</h3><p>Жоспар бойынша сабақ.</p></div>
+                            <div id="day3" class="info"><h3>3-наурыз</h3><p>Жоспар бойынша сабақ.</p></div>
+                            <div id="day4" class="info"><h3>4-наурыз</h3><p>Жоспар бойынша сабақ.</p></div>
+                            <div id="day5" class="info"><h3>5-наурыз</h3><p>Жоспар бойынша сабақ.</p></div>
+                            <div id="day6" class="info"><h3>6-наурыз</h3><p>Жоспар бойынша сабақ.</p></div>
+                            <div id="day7" class="info"><h3>7-наурыз</h3><p>Демалыс күні.</p></div>
+                            <div id="day10" class="info"><h3>10-наурыз</h3><p>Жоспар бойынша сабақ.</p></div>
+                            <div id="day11" class="info"><h3>11-наурыз</h3><p>Жоспар бойынша сабақ.</p></div>
+                            <div id="day12" class="info"><h3>12-наурыз</h3><p>Жоспар бойынша сабақ.</p></div>
+                            <div id="day13" class="info"><h3>13-наурыз</h3><p>Жоспар бойынша сабақ.</p></div>
+                            <div id="day14" class="info"><h3>14-наурыз</h3><p>Демалыс күні.</p></div>
+                            <div id="day15" class="info"><h3>15-наурыз</h3><p>Демалыс күні.</p></div>
+                            <div id="day16" class="info"><h3>16-наурыз</h3><p>Жоспар бойынша сабақ.</p></div>
+                            <div id="day17" class="info"><h3>17-наурыз</h3><p>Жоспар бойынша сабақ.</p></div>
+                            <div id="day18" class="info"><h3>18-наурыз</h3><p>Жоспар бойынша сабақ.</p></div>
+                            <div id="day19" class="info"><h3>19-наурыз</h3><p>Жоспар бойынша сабақ.</p></div>
+                            <div id="day20" class="info"><h3>20-наурыз</h3><p>Жоспар бойынша сабақ.</p></div>
+                            <div id="day24" class="info"><h3>24-наурыз</h3><p>Жоспар бойынша сабақ.</p></div>
+                            <div id="day25" class="info"><h3>25-наурыз</h3><p>Жоспар бойынша сабақ.</p></div>
+                            <div id="day26" class="info"><h3>26-наурыз</h3><p>Жоспар бойынша сабақ.</p></div>
+                            <div id="day27" class="info"><h3>27-наурыз</h3><p>Жоспар бойынша сабақ.</p></div>
+                            <div id="day28" class="info"><h3>28-наурыз</h3><p>Демалыс күні.</p></div>
+                            <div id="day29" class="info"><h3>29-наурыз</h3><p>Демалыс күні.</p></div>
+                            <div id="day30" class="info"><h3>30-наурыз</h3><p>Жоспар бойынша сабақ.</p></div>
+                            <div id="day31" class="info"><h3>31-наурыз</h3><p>Жоспар бойынша сабақ.</p></div>
+                        </td>
+                    </tr>
+                </table>
+            </section>
+        </div>
+    </main>
+
+    <script>
+    function welcome(){
+        Swal.fire({
+            title: 'Сәлем!',
+            text: 'Айарудың портфолио сайтына қош келдіңіз',
+            icon: 'success',
+            confirmButtonText: 'OK'
+        });
+    }
+    </script>
+</body>
+</html>
